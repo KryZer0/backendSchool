@@ -1,0 +1,5 @@
+Select nilai_harian.id_nilai_harian, siswa.Nama_siswa, mata_pelajaran.nama_mapel, materi.nama_materi, nilai_harian.th1, nilai_harian.th2, nilai_harian.ph
+from nilai_harian
+INNER JOIN materi ON nilai_harian.id_materi = materi.id_materi
+INNER JOIN siswa ON nilai_harian.nisn = siswa.NISN
+INNER JOIN mata_pelajaran ON nilai_harian.id_mapel = mata_pelajaran.id_mapel;
